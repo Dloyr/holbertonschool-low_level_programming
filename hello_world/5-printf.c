@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/*
- * main - Prints with proper grammar,
- * but the outcome is a piece of art,
+/**
+ * main - Print with proper grammar, but the outcome is a
+ * piece of art, followed by a new line.
  *
- * return: 0.
+ * Return: Always 0.
  */
 int main(void)
 {
