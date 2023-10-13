@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - void
+ * main - Prints \"Programming is like building a multilingual puzzle, followed by a new line.
  *
- * Description : 'Ecrire le texte'
- *@parameter : 'afficher avec puts'
- *
- * Return : Always 0 (Success)
+ * Result : always 0
  */
 
 int main(void)
