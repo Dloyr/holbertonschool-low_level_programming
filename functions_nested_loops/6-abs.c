@@ -2,7 +2,7 @@
 
 /**
  * _abs - print a function that computes the absolute value
- * of an integer
+ * of ani integer
  *
  * @r: variable to check
  *
@@ -13,18 +13,12 @@ int _abs(int r)
 {
 	if (r > 0)
 	{
-		_putchar('r');
+		return (r);
 	}
 	else if (r < 0)
 	{
-		_putchar(45);
-		_putchar('r');
+		return (-r);
 	}
 	else
-	{
-		_putchar (48);
-	}
-	{
 		return (0);
-	}
 }
