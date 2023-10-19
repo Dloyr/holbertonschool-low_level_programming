@@ -15,12 +15,10 @@ school$(OBJ): school$(SRC)
 $(NAME): main$(OBJ) school$(OBJ)
 	$(CC) main$(OBJ) school$(OBJ) -o $(NAME)
 clean:
-	$(RM) *~
+	$(RM) 
 oclean:
-	$(RM) *$(OBJ)
+	$(RM) main$(OBJ) school$(OBJ)
 fclean:
-	$(RM) *~ $(NAME) *$(OBJ)
+	$(RM) *~ $(NAME) main$(OBJ) school$(OBJ)
 re:
-	$(CC) *$(SRC)
-
-
+	$(CC) main$(SRC) school$(SRC)
