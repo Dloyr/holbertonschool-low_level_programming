@@ -5,6 +5,7 @@
  * by a new line. Or else just follow by a new line
  *
  * @n: variable to check
+ * @line: variable to print _
  */
 
 void print_line(int n)
