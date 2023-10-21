@@ -10,7 +10,7 @@ int main(void)
 	{
 		if (num % 15 == 0)
 		{
-			printf("Fizz Buzz ");
+			printf("FizzBuzz ");
 		}
 		else if (num % 5 == 0)
 		{
