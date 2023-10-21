@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
- * print_line - print a straight line if n > 0, follow
- * by a new line. Or else just follow by a new line
+ * print_line -  print _ in the terminal
  *
- * @n: variable to check
- * @line: variable to print _
+ * @n: number of _
  */
 
 void print_line(int n)
 {
 	int line;
 
-	if ( n > 0)
+	if (n > 0)
 	{
 		for (line = 0; line < n; line++)
 		{
