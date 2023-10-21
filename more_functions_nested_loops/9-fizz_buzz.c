@@ -22,10 +22,9 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", num);
+			printf("%d \n", num);
 		}
 		num++;
-		printf("\n");
 	}
 	return (0);
 }
