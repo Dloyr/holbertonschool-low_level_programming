@@ -6,10 +6,26 @@ int main(void)
 
 	num = 1;
 
-	while (num >= 100)
+	while (num <= 100)
 	{
-		printf("%d", num);
+		if (num % 15 == 0)
+		{
+			printf("Fizz Buzz");
+		}
+		else if (num % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else if (num % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else
+		{
+			printf("%d", num);
+		}
 		num++;
 	}
+	printf("\n");
 	return (0);
 }
