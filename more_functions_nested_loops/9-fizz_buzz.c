@@ -31,10 +31,6 @@ int main(void)
 		}
 		num++;
 	}
-	if (num > 1)
-	{
-		printf("\b");
-	}
 	printf("\n");
 	return (0);
 }
