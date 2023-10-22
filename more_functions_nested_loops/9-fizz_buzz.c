@@ -32,7 +32,7 @@ int main(void)
 			printf("%d", num);
 		}
 		num++;
-		if ( num < 100)
+		if ( num < 101)
 		{
 			printf(" ");
 		}
