@@ -1,30 +1,27 @@
 #include "main.h"
 
 /**
- * print_diagonal -  print \ in the terminal
+ * print_diagonal - printing lines diagonal
+ * @n: input variable
  *
- * @n: number of \
+ * Return: void
  */
+
 
 void print_diagonal(int n)
 {
-	int diago;
-	int space;
+	int i, j;
 
-	if (n > 0)
+	if (n <= 0)
+		_putchar('\n');
+	for (i = 0; i < n; i++)
 	{
-		for (diago = 0; diago < n; diago++)
+		for (j = 0; j < i; j++)
 		{
-			for (space = 0; space < diago; space++)
-			{
-				_putchar(' ');
-			}
-			_putchar('\\');
-			_putchar('\n');
+			_putchar(' ');
 		}
-	}
-	else
-	{
+		_putchar('\\');
 		_putchar('\n');
 	}
+
 }
