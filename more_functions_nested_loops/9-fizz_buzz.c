@@ -4,7 +4,7 @@
  * main - print 0 to 100 with fizz for %3 , buzz for %5
  * FizzBuzz for %15
  *
- * Return: 0
+ * Return: Always 0
  */
 
 int main(void)
@@ -29,7 +29,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", num);
+			printf("%d", num);
 		}
 		num++;
 		if ( num < 100)
