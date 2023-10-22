@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - print 0 to 100 with fizz for %3 , buzz for %5
+ * FizzBuzz for %15
+ */
+
 int main(void)
 {
 	int num;
@@ -25,6 +30,10 @@ int main(void)
 			printf("%d ", num);
 		}
 		num++;
+	}
+	if (num > 1)
+	{
+		printf("\b");
 	}
 	printf("\n");
 	return (0);
