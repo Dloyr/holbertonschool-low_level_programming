@@ -1,15 +1,34 @@
 #include "main.h"
 
+/**
+ * puts_half - print the second half of the string of pointer
+ * @str: pointer to use
+ */
+
 void puts_half(char *str)
 {
-	int tab, length = 0;
-	int n = (length - 1) /2;
+	int tab, length, n;
 
-	for (tab = 0; str [tab] != '\0'; length++)
+	tab = 0;
+	length = 0;
+
+	while (str[tab] != '\0')
 	{
-		if ( length % 2 == 0)
+		length++;
+		tab++;
+	}
+	if ((length % 2) == 0)
+	{
+		for (tab = length / 2; str[tab] != '\0'; tab++)
 		{
-			_putchar(n);
+			_putchar(str[tab]);
+		}
+	}
+	else
+	{
+		for (n = length - 1 / 2; n < length - 1; n++)
+		{
+			_putchar(str[n]);
 		}
 	}
 	_putchar('\n');
