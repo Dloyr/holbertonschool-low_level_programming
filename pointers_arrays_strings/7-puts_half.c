@@ -3,17 +3,14 @@
 void puts_half(char *str)
 {
 	int tab, length = 0;
+	int n = (length - 1) /2;
 
-	while ( *str != '\0')
+	for (tab = 0; str [tab] != '\0'; length++)
 	{
-		length++;
-		tab++;
-	}
-	int n = (length_of_the_string - 1) / 2;
-	
-	if ( length % 2 == 0)
-	{
-		_putchar(n);
+		if ( length % 2 == 0)
+		{
+			_putchar(n);
+		}
 	}
 	_putchar('\n');
 }
