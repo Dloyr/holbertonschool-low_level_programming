@@ -12,7 +12,7 @@ void rev_string(char *s)
 		number++;
 		tab++;
 	}
-	right = number / 2;
+	right = number - 1;
 
 	for (tab = left; tab < right; tab++)
 	{
