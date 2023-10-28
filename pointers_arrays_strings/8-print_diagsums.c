@@ -11,15 +11,15 @@ void print_diagsums(int *a, int size)
 {
 	int indexa, indexb, somme;
 
-	for(indexa = 0; indexa < size; indexa++)
+	for (indexa = 0; indexa < size; indexa++)
 	{
-  		for(indexb = 0; indexb < size; indexb++)
-  		{		
-   			if (indexa == indexb || indexa + indexb == size - 1)
-   			{			
-				somme = a[indexa + indexb]; 
+		for (indexb = 0; indexb < size; indexb++)
+		{
+			if (indexa == indexb || indexa + indexb == size - 1)
+			{
+				somme = a[indexa + indexb];
 			}
-  		}
- 	}
+		}
+	}
 	printf("%d", somme);
 }
