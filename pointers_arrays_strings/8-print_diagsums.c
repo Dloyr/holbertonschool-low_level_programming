@@ -9,17 +9,13 @@
 
 void print_diagsums(int *a, int size)
 {
-	int indexa, indexb, somme;
+	int index, sommea = 0, sommeb = 0;
 
-	for (indexa = 0; indexa < size; indexa++)
+	for (index = 0; index < size; index++)
 	{
-		for (indexb = 0; indexb < size; indexb++)
-		{
-			if (indexa == indexb || indexa + indexb == size - 1)
-			{
-				somme = a[indexa + indexb];
-			}
-		}
+		sommea += a[index * size + index];
+		sommeb += a[index * size + (size - 1 - index)];
 	}
-	printf("%d", somme);
+	printf("%d, ", sommea);
+	printf("%d\n", sommeb);
 }
