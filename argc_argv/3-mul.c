@@ -5,27 +5,23 @@
 *main - multiplie two numbers
 *@argc: argument counter
 *@argv: argument value
-*Return: 1 or mul
+*Return: 0
 */
 
 int main(int argc, char **argv)
 {
-	int index;
+	int v1, v2, mul;
 
-	for (index = 0; index < argc; index++)
+	if (argc != 3)
 	{
-		if (argc != 3)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			int v1 = atoi(argv[1]);
-			int v2 = atoi(argv[2]);
-			int mul = v1 * v2;
-
-			return (mul);
-		}
+		printf("Error\n");
 	}
+	else
+	{
+		v1 = atoi(argv[1]);
+		v2 = atoi(argv[2]);
+		mul = v1 * v2;
+		printf("%d\n", mul);
+	}
+	return (0);
 }
