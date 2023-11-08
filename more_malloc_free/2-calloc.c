@@ -24,5 +24,4 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		pointeur[index] = 0;
 
 	return (pointeur);
-	free(pointeur);
 }
