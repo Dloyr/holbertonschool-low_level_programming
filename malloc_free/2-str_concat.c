@@ -11,7 +11,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s3;
-	int taille1, taille2, taille3, index;
+	int taille1 = 0, taille2 = 0, taille3, index;
 
 	if (s1 == NULL)
 	{
@@ -22,12 +22,16 @@ char *str_concat(char *s1, char *s2)
 		return (" ");
 	}
 
-	for (taille1 = 1; s1[taille1]; taille1++)
-		continue;
-	for (taille2 = 1; s2[taille2]; taille2++)
-		continue;
+	for (index = 0; s1[index]; index++)
+	{
+		taille1++;
+	}
+	for (index = 0; s2[index]; index++)
+	{
+		taille2++;
+	}
 
-	taille3 = taille1 + taille2;
+	taille3 = taille1 + taille2 + 1;
 
 	s3 = malloc(sizeof(char) * taille3);
 
