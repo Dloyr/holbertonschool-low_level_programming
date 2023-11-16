@@ -22,14 +22,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (index = 0; index < n; index++)
 	{
 		strings = va_arg(liststrings, char*);
-		printf("%s", strings);
-		if (index < n - 1)
+
+		if (strings != NULL)
 		{
-			printf("%s", separator);
+		printf("%s", strings);
 		}
+
 		if (strings == NULL)
 		{
 			printf("(nil)");
+		}
+
+		if (index < n - 1)
+		{
+			printf("%s", separator);
 		}
 	}
 	printf("\n");
