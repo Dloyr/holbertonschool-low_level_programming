@@ -14,8 +14,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int numbers;
 
 	if (separator == NULL)
-	;
-
+	{
+		printf("");
+	}
 	va_start(listnumbers, n);
 
 	for (index = 0; index < n; index++)
