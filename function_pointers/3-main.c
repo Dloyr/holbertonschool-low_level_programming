@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-	
+
 	if (operator == NULL)
 	{
 		printf("Error\n");
