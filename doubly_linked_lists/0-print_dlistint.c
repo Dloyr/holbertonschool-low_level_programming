@@ -16,7 +16,7 @@ size_t print_dlistint(const dlistint_t *h)
 	{
 		if (h->n == '\0')
 		{
-			printf("NULL");
+			printf("0");
 		}
 		else
 		{
