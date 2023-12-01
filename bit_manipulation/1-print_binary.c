@@ -5,11 +5,21 @@
 */
 void print_binary(unsigned long int n)
 {
-	int index;
-	
-	for (index = 7; index >= 0; index--)
+	int index, length = 0;
+	int binary;
+	unsigned long int n_copy = n;
+
+	while (n_copy)
 	{
-		if ((n >> index) & 1)
+		length++;
+		n_copy >>= 1;
+	}
+
+	for (index = length - 1; index >= 0; index--)
+	{
+		binary = (n >> index) & 1;
+
+		if (binary == 1)
 		{
 			putchar('1');
 		}
