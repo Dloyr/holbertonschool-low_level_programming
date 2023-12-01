@@ -9,6 +9,12 @@ void print_binary(unsigned long int n)
 	int binary;
 	unsigned long int n_copy = n;
 
+	if (n == 0)
+	{
+		putchar('0');
+		return;
+	}
+
 	while (n_copy)
 	{
 		length++;
