@@ -1,1 +1,1 @@
-Project : Bit manipulation
+Project : Bits manipulation
