@@ -29,5 +29,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 	New_node->next = ht->array[IndexOfKey];
+	ht->array[IndexOfKey] = New_node;
 		return (1);
 }
