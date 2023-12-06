@@ -15,15 +15,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	New_node->key = strdup(key);
-	if(New_node->key == NULL)
+	if (New_node->key == NULL)
 	{
 		free(New_node);
 		return (0);
 	}
 
 	New_node->value = strdup(value);
-	if(New_node->value == NULL)
+	if (New_node->value == NULL)
 	{
+		free(New_node->key);
 		free(New_node);
 		return (0);
 	}
