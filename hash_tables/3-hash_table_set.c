@@ -9,14 +9,12 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	int IndexOfKey;
-	hash_node_t *New_node, *Actual_Node;
+	hash_node_t *New_node;
 
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 
 	IndexOfKey = key_index((const unsigned char *)key, ht->size);
-	Actual_Node = ht->array[IndexOfKey];
-
 	New_node = malloc(sizeof(hash_node_t));
 	if (New_node == NULL)
 		return (0);
