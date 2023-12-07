@@ -16,11 +16,13 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	IndexOfKey = key_index((const unsigned char *)key, ht->size);
 	ActualNode = ht->array[IndexOfKey];
 
-	if (strcmp(ActualNode->key, key) == 0)
-		return (ActualNode->value);
+	while (ActualNode != NULL)
+	{
+		if (strcmp(ActualNode->key, key) == 0)
+			return (ActualNode->value);
 
-	ActualNode = ActualNode->next;
-
+		ActualNode = ActualNode->next;
+	}
 	return (NULL);
 
 }
